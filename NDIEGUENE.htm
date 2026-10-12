@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NDIEGUENE ARCHI - Plans architecturaux, dessin technique et modélisation 3D à Thiès, Sénégal.">
+<title>NDIEGUENE ARCHI | Architecture & Génie Civil</title>
+<style>
+:root {
+  --navy: #102338;
+  --gold: #d9a441;
+  --light: #f4f6f8;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  color: #243447;
+  line-height: 1.6;
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.logo { font-size: 23px; font-weight: bold; }
+.logo span { color: var(--gold); }
+nav { display: flex; flex-wrap: wrap; gap: 18px; }
+nav a { color: white; text-decoration: none; font-size: 14px; }
+nav a:hover { color: var(--gold); }
+.hero {
+  min-height: 490px;
+  padding: 85px 7%;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(9,24,39,.95), rgba(9,24,39,.55)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  display: flex;
+  align-items: center;
+}
+.hero-content { max-width: 700px; }
+.tag {
+  color: var(--gold);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.12; margin: 18px 0; }
+.hero p { font-size: 18px; margin-bottom: 28px; }
+.btn {
+  display: inline-block;
+  padding: 13px 23px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px 8px 5px 0;
+}
+.btn-outline { border: 1px solid white; color: white; background: transparent; }
+section { padding: 70px 7%; }
+.section-title { text-align: center; margin-bottom: 38px; }
+.section-title h2 { font-size: 32px; color: var(--navy); }
+.section-title p { color: #667585; margin-top: 8px; }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 5px 22px #10233812;
+  border-bottom: 3px solid var(--gold);
+}
+.card .icon { font-size: 32px; margin-bottom: 12px; }
+.card h3 { color: var(--navy); margin-bottom: 10px; }
+.about { background: var(--light); }
+.about-inner {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.about-inner p { margin-top: 15px; }
+.tools {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+.tools span {
+  background: var(--navy);
+  color: white;
+  padding: 10px 19px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.contact { background: var(--navy); color: white; }
+.contact .section-title h2 { color: white; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+.contact-item {
+  padding: 22px;
+  background: #ffffff0c;
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+}
+.contact-item h3 { color: var(--gold); margin-bottom: 8px; }
+.contact a { color: white; }
+.contact .btn { color: var(--navy); }
+footer {
+  text-align: center;
+  background: #091725;
+  color: #d5dce4;
+  padding: 22px;
+  font-size: 13px;
+}
+@media(max-width:600px) {
+  header { padding: 18px 5%; }
+  nav { gap: 12px; }
+  .hero { padding: 65px 6%; }
+  section { padding: 55px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NDIEGUENE <span>ARCHI</span></div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <div class="tag">Architecture • Génie civil • Modélisation 3D</div>
+    <h1>Concevons ensemble vos projets de construction.</h1>
+    <p>
+      NDIEGUENE ARCHI vous accompagne dans la réalisation
+      de vos plans architecturaux et la conception de vos projets,
+      avec précision, créativité et professionnalisme.
+    </p>
+    <a class="btn" href="#contact">Discuter de mon projet</a>
+    <a class="btn btn-outline" href="#services">Découvrir nos services</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>Nos services</h2>
+    <p>Des solutions adaptées à vos besoins en construction.</p>
+  </div>
+  <div class="services">
+    <article class="card">
+      <div class="icon">📐</div>
+      <h3>Plans architecturaux 2D</h3>
+      <p>Conception de plans de maisons, villas et bâtiments selon les besoins du projet.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🏠</div>
+      <h3>Modélisation 3D</h3>
+      <p>Visualisation en trois dimensions pour mieux comprendre les volumes et les espaces.</p>
+    </article>
+    <article class="card">
+      <div class="icon">💻</div>
+      <h3>Dessin technique</h3>
+      <p>Réalisation et mise au propre de dessins techniques et de documents graphiques.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🏗️</div>
+      <h3>Études de projets</h3>
+      <p>Accompagnement dans la préparation graphique et la conception de vos projets de construction.</p>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="about-inner">
+    <div class="section-title">
+      <h2>À propos de NDIEGUENE ARCHI</h2>
+      <p>La précision technique au service de vos ambitions.</p>
+    </div>
+    <p>
+      Je suis technicien supérieur en génie civil, spécialisé dans
+      le dessin architectural et la conception assistée par ordinateur.
+      Mon objectif est de vous accompagner dans la concrétisation
+      de vos idées, de l'élaboration des plans à la visualisation 3D.
+    </p>
+    <div class="tools">
+      <span>AutoCAD</span>
+      <span>SketchUp</span>
+      <span>Revit</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-title">
+    <h2>Parlons de votre projet</h2>
+    <p>Contactez NDIEGUENE ARCHI pour discuter de vos besoins.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <h3>Téléphone</h3>
+      <p><a href="tel:+221784311531">78 431 15 31</a></p>
+      <p><a href="https://wa.me/221784311531" target="_blank" rel="noopener">Écrire sur WhatsApp</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>E-mail</h3>
+      <p><a href="mailto:ndiegahmada@gmail.com">ndiegahmada@gmail.com</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>Notre siège</h3>
+      <p>Keur Mame Aladji, Thiès, Sénégal</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px">
+    <a class="btn" href="mailto:ndiegahmada@gmail.com?subject=Demande%20de%20devis%20-%20NDIEGUENE%20ARCHI">
+      Demander un devis
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 NDIEGUENE ARCHI — Architecture & Génie civil.</p>
+  <p>Thiès, Sénégal | Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
